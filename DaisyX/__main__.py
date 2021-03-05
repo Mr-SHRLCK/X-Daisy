@@ -218,7 +218,7 @@ def start(update: Update, context: CallbackContext):
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
-                timeout=200,
+                timeout=60,
             )
     else:
         update.effective_message.reply_text(
@@ -247,7 +247,7 @@ def error_handler(update, context):
         "<pre>update = {}</pre>\n\n"
         "<pre>{}</pre>"
     ).format(
-        html.escape(json.dumps(update.to_dict(), indent=3, ensure_ascii=True)),
+        html.escape(json.dumps(update.to_dict(), indent=2, ensure_ascii=False)),
         html.escape(tb),
     )
 
