@@ -100,7 +100,7 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "Hey  {} 🙏 \n \n **pls join @{} Channel Join ** 😭 \n and press**UNMUTE ME** Button  touch කරන්න. \n \n **[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
+                        "ಕ್ಷಮಿಸಿ  {} 🙏 \n \n ನೀವು ಇನ್ನು ನಮ್ಮ ಚಾನಲ್ ಗೆ ಸೇರಿಕೊಂಡಿಲ್ಲ ..🥺🥺 \n ದಯವಿಟ್ಟು ನಮ್ಮ @{} ಗೆ Join ಆಗಿ  😭 \n ಮತ್ತು ಕೆಳಗೆ ಕಾಣುತ್ತಿರುವ **UNMUTE ME** ಎಂಬ ಬಟನ್ Click ಮಾಡಿ.. \n ನಂತರ ನೀವು ಇಲ್ಲಿ Message ಮಾಡಬಹುದು..😍😍. \n \n **[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
                             message.from_user.mention, channel, channel
                         ),
                         disable_web_page_preview=True,
