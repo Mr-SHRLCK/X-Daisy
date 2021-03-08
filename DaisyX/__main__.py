@@ -474,17 +474,17 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_tac":
         query.message.edit_text(
-            text=f"<b> ｢ Terms and Conditions 」</b>\n"
-            f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
-            f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @The_NOoBHaCkeR spending many sleepless nights.. So, Respect it."
-            f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
-            f"\n✪ If you need to ask anything about \n  this bot, Go [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group) 😁."
-            f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
-            f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of @𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗮𝗷_𝗯𝗼𝘁 we are not resposible for anything."
-            f"\n\nFor any kind of help, related to this bot, Join [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group) 🥺."
-            f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
+            text=f"* ｢ Terms and Conditions 」*\n"
+            "\n```To Use This Bot, You Need To Read Terms and Conditions Carefully.```\n"
+            "\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
+            "\n✪ Always try to keep credits, so \n  This hardwork is done by @The_NOoBHaCkeR spending many sleepless nights.. So, Respect it."
+            "\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for *Paul Larson for Marie*."
+            "\n✪ If you need to ask anything about \n  this bot, Go [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group) 😁."
+            "\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
+            "\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
+            "\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of @𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗮𝗷_𝗯𝗼𝘁 we are not resposible for anything."
+            "\n\nFor any kind of help, related to this bot, Join [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group) 🥺."
+            "\n\n```Terms & Conditions will be changed anytime```\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
