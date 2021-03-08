@@ -72,14 +72,14 @@ I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managi
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Me ⚓", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="𝗔𝗯𝗼𝘂𝘁 𝗠𝗲", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text="🤝 Help", callback_data="help_back"),
+        InlineKeyboardButton(text="𝗛𝗲𝗹𝗽", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="➕ Add Me To Your Group", url="t.me/Pruthvi_Raj_bot?startgroup=true"
+            text="𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽", url="t.me/Pruthvi_Raj_bot?startgroup=true"
         ),
     ],
 ]
