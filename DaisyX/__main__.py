@@ -247,7 +247,7 @@ def error_handler(update, context):
         "<pre>update = {}</pre>\n\n"
         "<pre>{}</pre>"
     ).format(
-        html.escape(json.dumps(update.to_dict(), indent=2, ensure_ascii=False)),
+        html.escape(json.dumps(update.to_dict(), indent=2, ensure_ascii=True)),
         html.escape(tb),
     )
 
