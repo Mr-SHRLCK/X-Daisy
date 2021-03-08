@@ -361,7 +361,7 @@ def DaisyX_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by _.* "
-            f"\n\n 🔥 Join [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https:/t.me/Pruthvi_Rj_Group) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+               🔥 Join [Pruthvi_Rj_Group](https:/t.me/Pruthvi_Rj_Group) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/8b420d3844833b31f16cc.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
@@ -374,7 +374,7 @@ def DaisyX_about_callback(update, context):
                             text="𝗛𝗼𝘄 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
-                            text="𝗧 & 𝗖", callback_data="aboutmanu_tac"
+                            text="𝗠𝗲", callback_data="aboutmanu_tac"
                         ),
                     ],
                     [
@@ -474,17 +474,11 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_tac":
         query.message.edit_text(
-            text=f"* ｢ Terms and Conditions 」*\n"
-            "\n```To Use This Bot, You Need To Read Terms and Conditions Carefully.```\n"
-            "\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            "\n✪ Always try to keep credits, so \n  This hardwork is done by @The_NOoBHaCkeR spending many sleepless nights.. So, Respect it."
-            "\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for *Paul Larson for Marie*."
-            "\n✪ If you need to ask anything about \n  this bot, Go [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group) 😁."
-            "\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
-            "\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            "\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of @𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗮𝗷_𝗯𝗼𝘁 we are not resposible for anything."
-            "\n\nFor any kind of help, related to this bot, Join [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group) 🥺."
-            "\n\n```Terms & Conditions will be changed anytime```\n",
+            text=f"* ｢ Me 」*"
+            f"\nHi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management. \n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group).\n"
+            f"\n\nAlways try to keep credits, so \n  This hardwork is done by @The_NOoBHaCkeR spending many sleepless nights.. So, Respect it.\n"
+            f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
