@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𖣘 Pruthvi Raj 𖣘](https://telegra.ph/file/948928fbfabd3607e3b73.jpg)
+Hello there, I'm [𖣘 𝗣𝗿𝘂𝘁𝗵𝘃𝗶 𝗥𝗮𝗷 𖣘](https://telegra.ph/file/948928fbfabd3607e3b73.jpg)
 
 I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
 
@@ -86,7 +86,7 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [𖣘 Pruthvi Raj 𖣘](https://telegra.ph/file/948928fbfabd3607e3b73.jpg)
+*Main Commands :* [𖣘 𝗣𝗿𝘂𝘁𝗵𝘃𝗶 𝗥𝗮𝗷 𖣘](https://telegra.ph/file/948928fbfabd3607e3b73.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /donate: You can support my creater using this command.
@@ -197,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="help_back")]]
                     ),
                 )
 
@@ -361,7 +361,7 @@ def DaisyX_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by _.* "
-            f"\n\n 🔥 Join [Pruthvi_RJ_Group™](https:/t.me/Pruthvi_Rj_Group) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            f"\n\n 🔥 Join [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https:/t.me/Pruthvi_Rj_Group) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/8b420d3844833b31f16cc.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
@@ -371,18 +371,18 @@ def DaisyX_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="How To Use Me", callback_data="aboutmanu_howto"
+                            text="𝗛𝗼𝘄 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
-                            text="T & C", callback_data="aboutmanu_tac"
+                            text="𝗧 & 𝗖", callback_data="aboutmanu_tac"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="❔Help & Commands", callback_data="help_back"
+                            text="𝗛𝗲𝗹𝗽", callback_data="help_back"
                         )
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                    [InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="aboutmanu_back")],
                 ]
             ),
         )
@@ -398,7 +398,7 @@ def DaisyX_about_callback(update, context):
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
             f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [Pruthvi_RJ_Group™](https://t.me/Pruthvi_Rj_Group).\n"
+            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group).\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -406,13 +406,13 @@ def DaisyX_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Admins Settings", callback_data="aboutmanu_permis"
+                            text="𝗔𝗱𝗺𝗶𝗻𝘀 𝗦𝗲𝘁𝘁𝗶𝗻𝗴𝘀", callback_data="aboutmanu_permis"
                         ),
                         InlineKeyboardButton(
-                            text="Anti Spam", callback_data="aboutmanu_spamprot"
+                            text="𝗔𝗻𝘁𝗶 𝗦𝗽𝗮𝗺", callback_data="aboutmanu_spamprot"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_")],
+                    [InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="aboutmanu_")],
                 ]
             ),
         )
@@ -421,11 +421,11 @@ def DaisyX_about_callback(update, context):
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
             f"\n\nBased on [Saithama](https://github.com/AnimeKaizoku/SaitamaRobot) + [suzuya](https://github.com/Godzilla-0/Suzuya_ProBot)."
             f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
-            f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
+            f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group).",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_tac")]]
+                [[InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="aboutmanu_tac")]]
             ),
         )
 
@@ -440,7 +440,7 @@ def DaisyX_about_callback(update, context):
             f"\n\nThe message very clearly says that you need these rights - <i>not {dispatcher.bot.first_name}.</i>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto")]]
+                [[InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="aboutmanu_howto")]]
             ),
         )
     elif query.data == "aboutmanu_spamprot":
@@ -469,7 +469,7 @@ def DaisyX_about_callback(update, context):
             "\n_ A button gets added to the welcome message for them to unmute themselves. This proves they aren't a bot! soft - restricts users ability to post media for 24 hours. strong - mutes on join until they prove they're not bots._",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto")]]
+                [[InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="aboutmanu_howto")]]
             ),
         )
     elif query.data == "aboutmanu_tac":
@@ -479,20 +479,20 @@ def DaisyX_about_callback(update, context):
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
             f"\n✪ Always try to keep credits, so \n  This hardwork is done by @The_NOoBHaCkeR spending many sleepless nights.. So, Respect it."
             f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
-            f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
+            f"\n✪ If you need to ask anything about \n  this bot, Go [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group)."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of DaisyXBot we are not resposible for anything."
-            f"\n\nFor any kind of help, related to this bot, Join @{SUPPORT_CHAT}."
+            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of @𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗮𝗷_𝗯𝗼𝘁 we are not resposible for anything."
+            f"\n\nFor any kind of help, related to this bot, Join [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group)."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Credits", callback_data="aboutmanu_credit"
+                            text="𝗖𝗿𝗲𝗱𝗶𝘁𝘀", callback_data="aboutmanu_credit"
                         ),
-                        InlineKeyboardButton(text="Back", callback_data="aboutmanu_"),
+                        InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="aboutmanu_"),
                     ]
                 ]
             ),
@@ -515,7 +515,7 @@ def get_help(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="𝗛𝗲𝗹𝗽",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -531,14 +531,14 @@ def get_help(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="𝗛𝗲𝗹𝗽",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Support Chat",
-                            url="https://t.me/{}".format(SUPPORT_CHAT),
+                            text="𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗖𝗵𝗮𝘁",
+                            url="https://t.me/Pruthvi_Rj_Group",
                         )
                     ],
                 ]
