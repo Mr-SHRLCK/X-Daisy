@@ -486,6 +486,7 @@ def DaisyX_about_callback(update, context):
             f"\n\nFor any kind of help, related to this bot, Join [𝗣𝗿𝘂𝘁𝗵𝘃𝗶_𝗥𝗝_𝗚𝗿𝗼𝘂𝗽](https://t.me/Pruthvi_Rj_Group) 🥺."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
